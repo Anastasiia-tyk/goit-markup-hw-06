@@ -238,8 +238,9 @@ ul {
         gap: 40px;
     }
 
-    .header-contacts-link {
-        padding: 24px 0;
+    .header-contacts-list {
+        flex-direction: row;
+        gap: 40px;
     }
 
     .header-contacts-item {
@@ -458,13 +459,20 @@ ul {
 
     background-image: linear-gradient(rgba(46, 47, 66, 0.7),
             rgba(46, 47, 66, 0.7)),
-        image-set(
-        url("../images/people-office.jpg") 1x,
-        url("../images/people-office@2x.jpg") 2x);
+        url("../images/people-office.jpg");
     max-width: 320px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+}
+
+/* BACKGROUND-IMAGE 2x */
+@media (min-resolution: 192dpi) {
+    .main-hero {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)),
+            url("../images/people-office@2x.jpg");
+    }
 }
 
 .main-hero-title {
