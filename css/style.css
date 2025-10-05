@@ -1393,7 +1393,9 @@ ul {
     letter-spacing: 0.04em;
     color: #8E8F99;
 
+    display: flex;
     align-items: center;
+    gap: 8px;
 }
 
 .accept {
@@ -1405,7 +1407,6 @@ ul {
     justify-content: center;
     width: 16px;
     height: 16px;
-    margin-right: 8px;
     outline: transparent;
     fill: transparent;
 
@@ -1413,6 +1414,9 @@ ul {
 }
 
 .accept-icon {}
+
+.accept-text {
+}
 
 .modal-input:checked+.modal-form-accept>.accept {
     background-color: #404BBF;
